@@ -9,11 +9,35 @@
   z-index: 0;
 }
 
+.container h2{
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 24px;
+  color: #333;
+  padding: 20px;
+  margin-top: -40px;
+}
+
+.container h2:before{
+  content: '';
+  display: block;
+  position: relative;
+  background: var(--primary-color);
+  width: 30%;
+  height: 2px;
+}
+
+.attributes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px auto;
+}
+
 .attribute{
   background: var(--primary-color);
   color: #f1f1f1;
-  width: 160px;
-  height: 160px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
   flex-direction: column;
   position: relative;
@@ -21,6 +45,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 14px;
 }
 
 .attribute p{

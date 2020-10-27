@@ -2,6 +2,7 @@ import Head from 'next/head';
 
 import Header from '../components/Header';
 import FirstSection from '../components/FirstSection';
+import Form from '../components/Form';
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       </Head>
       <Header />
       <FirstSection />
+      <Form />
     </div>
   )
 }
