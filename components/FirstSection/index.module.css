@@ -1,0 +1,30 @@
+.container{
+  background: url('/mobile-bg.png');
+}
+
+.container img{
+  max-width: 100%;
+  position: relative;
+  margin-top: -45px;
+  z-index: 0;
+}
+
+.attribute{
+  background: var(--primary-color);
+  color: #f1f1f1;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  flex-direction: column;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.attribute p{
+  margin: 5px auto;
+  font-size: 24px;
+  font-family: 'Barlow Condensed', sans-serif;
+}
