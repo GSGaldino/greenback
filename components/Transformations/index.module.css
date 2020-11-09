@@ -1,0 +1,62 @@
+.transformations{
+  background: url('/bg-transformacoes.jpg');
+  width: 100%;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.transformations h2{
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0px;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.container .withEffect{
+  border-right: 2px solid #fff;
+  width: 70%;
+  padding: 10px;
+}
+
+.item svg{
+  color: #fff;
+  font-size: 40px;
+}
+
+.item {
+  color: #fff;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 24px;
+  padding: 40px 0px;
+  text-align: center;
+}
+
+@media screen and (min-width: 800px){
+  .transformations{
+    background: url('/bg-transformacoes-desktop.jpg');
+    padding: 40px 0px;
+  }
+
+  .transformations img{
+    display: none;
+  }
+
+  .container .withEffect{
+    display: flex;
+    justify-content: space-around;
+    border: none;
+    width: 65%;
+  }
+
+  .container .item{
+    width: 250px;
+  }
+}

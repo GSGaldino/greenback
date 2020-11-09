@@ -2,7 +2,9 @@ import Head from 'next/head';
 
 import Header from '../components/Header';
 import FirstSection from '../components/FirstSection';
-import Form from '../components/Form';
+import Articles from '../components/Articles';
+import Transformations from '../components/Transformations';
+import Footer from '../components/Footer';
 
 export default function Home() {
   return (
@@ -12,7 +14,9 @@ export default function Home() {
       </Head>
       <Header />
       <FirstSection />
-      <Form />
+      <Articles />
+      <Transformations />
+      <Footer />
     </div>
   )
 }

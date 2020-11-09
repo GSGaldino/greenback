@@ -1,0 +1,12 @@
+.footer{
+  background: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.footer h2{
+  font-size: 24px;
+  color: #fff;
+}
