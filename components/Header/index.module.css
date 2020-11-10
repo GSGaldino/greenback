@@ -3,14 +3,32 @@
   padding: 10px;
   z-index: 1;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.14);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   position: relative;
+  padding-bottom: 0px;
+}
+
+.header .menu {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px;
+  max-height: 0px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.header .menu.open{
+  max-height: 2000px;
+}
+
+.header .menu a{
+  margin: 10px auto;
+  font-size: 24px;
 }
 
 .title{
   display: block;
+  width: 100%;
 }
 
 .title h1{
@@ -26,8 +44,10 @@
   width: 35px;
   height: 25px;
   border-bottom: 4px solid #333;
-  position: relative;
+  position: absolute;
   cursor: pointer;
+  top: 26px;
+  right: 20px;
 }
 
 .sandwich:before{
@@ -52,5 +72,22 @@
 @media screen and (min-width: 800px){
   .header{
     padding: 10px 80px;
+    display: flex;
+  }
+
+  .header .sandwich {
+    display: none;
+  }
+
+  .header .menu{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    max-height: 2000px;
+    flex-direction: row;
+  }
+
+  .header .menu a:hover {
+    text-decoration: underline;
   }
 }

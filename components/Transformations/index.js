@@ -1,9 +1,11 @@
-import {BsFillPeopleFill} from 'react-icons/bs';
-import {MdBusiness,MdShowChart} from 'react-icons/md';
+import Provider from '../Provider';
+
+import { BsFillPeopleFill } from 'react-icons/bs';
+import { MdBusiness, MdShowChart } from 'react-icons/md';
 
 import styles from './index.module.css';
 
-export default function Transfomations(){
+export default function Transfomations() {
   const Item = ({ icon, text }) => (
     <div className={styles.item}>
       <div>
@@ -17,34 +19,36 @@ export default function Transfomations(){
 
   return (
     <div className={styles.transformations}>
-      <img 
-        src="/retangle-white.svg" 
-        alt="white retangle"
-        style={{
-          width: "96%",
-          marginLeft: "10px"
-        }}
-      />
+      <Provider>
+        <img
+          src="/retangle-white.svg"
+          alt="white retangle"
+          style={{
+            width: "96%",
+            marginLeft: "10px"
+          }}
+        />
 
-      <h2>Transformações</h2>
-      <div className={styles.container}>
-        <div className={styles.withEffect}>
-          <Item
-            icon={<BsFillPeopleFill />}
-            text="Mudar a mentalidade do empreendedor"
-          />
-          <Item
-            icon={<MdBusiness />}
-            text="Ter gestão de empresa grande"
-          />
+        <h2>Transformações</h2>
+        <div className={styles.container}>
+          <div className={styles.withEffect}>
+            <Item
+              icon={<BsFillPeopleFill />}
+              text="Mudar a mentalidade do empreendedor"
+            />
+            <Item
+              icon={<MdBusiness />}
+              text="Ter gestão de empresa grande"
+            />
+          </div>
+          <div>
+            <Item
+              icon={<MdShowChart />}
+              text="Crescimento com segurança"
+            />
+          </div>
         </div>
-        <div>
-          <Item
-            icon={<MdShowChart />}
-            text="Crescimento com segurança"
-          />
-        </div>
-      </div>
+      </Provider>
     </div>
   )
 }

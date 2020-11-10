@@ -58,5 +58,7 @@
  .articles{
    display: flex;
    padding: 80px;
+   max-width: 1190px;
+   margin: 0 auto;
  } 
 }
