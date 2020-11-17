@@ -50,6 +50,15 @@
     background-attachment: fixed;
   }
 
+  .transformations:before{
+    content: '';
+    background: #f1f1f1;
+    width: 80%;
+    height: 1px;
+    display: block;
+    margin: 20px auto;
+  }
+
   .transformations img{
     display: none;
   }
@@ -58,10 +67,17 @@
     display: flex;
     justify-content: space-around;
     border: none;
-    width: 65%;
+    width: 68%;
+    align-items: center;
   }
 
   .container .item{
     width: 250px;
+  }
+
+  .container .withEffect .item:last-child{
+    border-left: 1px solid #f1f1f1;
+    border-right: 1px solid #f1f1f1;
+    padding: 10px 40px;
   }
 }

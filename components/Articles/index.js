@@ -16,6 +16,9 @@ export default function Articles() {
     },{
       image_url: '/post3.jpg',
       post_content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+    },{
+      image_url: '/post3.jpg',
+      post_content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
     }
   ];
 
