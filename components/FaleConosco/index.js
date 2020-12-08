@@ -11,7 +11,7 @@ import styles from './index.module.css';
 
 export default function FaleConosco() {
   const [fields, setFields] = useState({});
-  const url = process.env.BACKEND_URL || 'http://localhost:3000';
+  const url = 'https://greenbackconsultoria.vercel.app';
 
   const handleChange = event => {
     setFields({...fields, [event.target.name]: event.target.value})
