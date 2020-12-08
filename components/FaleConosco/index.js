@@ -11,6 +11,7 @@ import styles from './index.module.css';
 
 export default function FaleConosco() {
   const [fields, setFields] = useState({});
+  const url = 'https://greenback-backend.herokuapp.com'
 
   const handleChange = event => {
     setFields({...fields, [event.target.name]: event.target.value})
@@ -22,7 +23,7 @@ export default function FaleConosco() {
       return alert('Por favor preencha todos os campos!')
     }
 
-    const response = await fetch('/api/send', {
+    const response = await fetch(`${url}/api/v1/send`, {
       method: 'post',
       headers: {
         'Content-Type': 'application/json'
