@@ -5,6 +5,7 @@ import FirstSection from '../components/FirstSection';
 import Articles from '../components/Articles';
 import Transformations from '../components/Transformations';
 import Footer from '../components/Footer';
+import FaleConosco from '../components/FaleConosco';
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <FirstSection />
       <Articles />
       <Transformations />
+      <FaleConosco />
       <Footer />
     </div>
   )

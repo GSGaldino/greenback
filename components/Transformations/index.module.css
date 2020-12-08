@@ -8,7 +8,7 @@
 }
 
 .transformations h2{
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: var(--font-family);
   font-size: 24px;
   color: #fff;
   text-align: center;
@@ -34,7 +34,7 @@
 
 .item {
   color: #fff;
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: var(--font-family);
   font-size: 24px;
   padding: 40px 0px;
   text-align: center;
@@ -57,6 +57,7 @@
     height: 1px;
     display: block;
     margin: 20px auto;
+    opacity: 0.8;
   }
 
   .transformations img{

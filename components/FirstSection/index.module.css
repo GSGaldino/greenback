@@ -15,6 +15,7 @@
 
 .title {
   display: none;
+  font-size: 20px;
 }
 
 .container img{
@@ -26,8 +27,8 @@
 }
 
 .container h2{
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 24px;
+  font-family: var(--font-family);
+  font-size: 22px;
   color: #333;
   padding: 20px;
   margin-top: -40px;
@@ -46,7 +47,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: 20px auto;
+  margin: 60px auto;
 }
 
 .attribute{
@@ -73,8 +74,8 @@
 
 .attribute p{
   margin: 5px auto;
-  font-size: 24px;
-  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 20px;
+  font-family: var(--font-family);
 }
 
 @media screen and (min-width: 800px){
@@ -101,6 +102,7 @@
 
   .title p{
     margin: 20px auto;
+    font-family: var(--font-family);
   }
 
   .title a{
@@ -109,8 +111,8 @@
     display: block;
     width: 280px;
     text-align: center;
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 24px;
+    font-family: var(--font-family);
+    font-size: 20px;
     padding: 8px;
     text-decoration: none;
     border-radius: 8px;
