@@ -11,7 +11,6 @@ import styles from './index.module.css';
 
 export default function FaleConosco() {
   const [fields, setFields] = useState({});
-  const url = 'https://greenbackconsultoria.vercel.app';
 
   const handleChange = event => {
     setFields({...fields, [event.target.name]: event.target.value})
@@ -20,7 +19,7 @@ export default function FaleConosco() {
   const handleSubmit = async event => {
     event.preventDefault();
 
-    const response = await fetch(`${url}/api/send`, {
+    const response = await fetch('/api/send', {
       method: 'post',
       headers: {
         'Content-Type': 'application/json'
