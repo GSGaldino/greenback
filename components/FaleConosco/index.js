@@ -18,6 +18,9 @@ export default function FaleConosco() {
 
   const handleSubmit = async event => {
     event.preventDefault();
+    if( !fields.fullname || !fields.email || !fields.phone || !fields.uf || !fields.message){
+      return alert('Por favor preencha todos os campos!')
+    }
 
     const response = await fetch('/api/send', {
       method: 'post',
@@ -26,12 +29,12 @@ export default function FaleConosco() {
       },
       body: JSON.stringify(fields)
     });
-    if(response.ok){
+    const data = await response.json();
+    if(data){
       event.target.reset();
-      return alert('E-mail enviado com sucesso!')
-    }else if(!response.ok){
-      return alert('Erro interno!')
+      return alert(data.message);
     }
+    return alert('Erro em nossos servidores! Desculpe, tente novamente mais tarde.')
   }
 
   return (
