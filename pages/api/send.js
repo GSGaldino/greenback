@@ -24,8 +24,10 @@ export default async (req, res) => {
 
   remetent.sendMail(email, function (error, info) {
     if (error) {
-      return error
+      console.log(error)
+      return res.json(error)
     }else {
+      console.log(info)
       return res.json(info)
     }
   })

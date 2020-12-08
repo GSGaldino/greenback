@@ -28,7 +28,6 @@ export default function FaleConosco() {
     });
     if(response.ok){
       event.target.reset();
-      alert('E-mail enviado com sucesso!')
       return alert('E-mail enviado com sucesso!')
     }else if(!response.ok){
       return alert('Erro interno!')
