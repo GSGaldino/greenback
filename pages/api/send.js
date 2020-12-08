@@ -3,7 +3,9 @@ import nodemailer from 'nodemailer';
 export default function send(req, res) {
   if (req.method === 'POST') {
     const remetent = nodemailer.createTransport({
-      service: 'gmail',
+      service: 'Gmail',
+      port: 465,
+      secure: true,
       auth: {
         user: 'greenbackconsultoria2@gmail.com',
         pass: 'AluGreenback',
