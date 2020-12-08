@@ -11,6 +11,7 @@ import styles from './index.module.css';
 
 export default function FaleConosco() {
   const [fields, setFields] = useState({});
+  const url = process.env.BACKEND_URL || 'http://localhost:3000';
 
   const handleChange = event => {
     setFields({...fields, [event.target.name]: event.target.value})
@@ -18,7 +19,6 @@ export default function FaleConosco() {
 
   const handleSubmit = async event => {
     event.preventDefault();
-    const url = process.env.BACKEND_URL || 'http://localhost:3000'
 
     const response = await fetch(`${url}/api/send`, {
       method: 'post',
@@ -29,7 +29,10 @@ export default function FaleConosco() {
     });
     if(response.ok){
       event.target.reset();
+      alert('E-mail enviado com sucesso!')
       return alert('E-mail enviado com sucesso!')
+    }else if(!response.ok){
+      return alert('Erro interno!')
     }
   }
 
